@@ -1,0 +1,29 @@
+:root {
+  /* New color scheme */
+  --primary: #8B0000;  /* Dark Red */
+  --primary-light: #DC143C;  /* Crimson */
+  --primary-dark: #640000;
+  --secondary: #4A4A4A;  /* Dark Grey */
+  --secondary-light: #6E6E6E;
+  --secondary-dark: #2C2C2C;
+  
+  /* Gradients */
+  --primary-gradient: linear-gradient(135deg, var(--primary), var(--primary-light));
+  --secondary-gradient: linear-gradient(135deg, var(--secondary), var(--secondary-light));
+  
+  /* Text colors */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-light: #FFFFFF;
+  
+  /* Other colors */
+  --background: #F5F5F5;
+  --surface: #FFFFFF;
+  --error: #FF3B30;
+  --success: #34C759;
+  --warning: #FF9500;
+  
+  /* Font family */
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+}
