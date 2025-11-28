@@ -6,7 +6,7 @@ function Navbar({ user, onLogout }) {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-brand">EventSphere</Link>
+        <Link to="/" className="navbar-brand">Eventrix</Link>
         <div className="navbar-menu">
           <Link to="/" className="navbar-link">Events</Link>
           {user ? (
