@@ -4,7 +4,7 @@
   isolation: isolate;
   z-index: 0;
   background-image: linear-gradient(rgba(8, 45, 73, 0.82), rgba(8, 45, 73, 0.78)),
-    url('./assets/eventrix-hero.svg');
+    url('/images/eventrix-hero.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
