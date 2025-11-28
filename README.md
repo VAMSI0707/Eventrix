@@ -1,7 +1,6 @@
 # Eventrix
 
 Eventrix is a microservice-based event management platform. The repository contains the backend services, a React frontend, and shared application code.
-![Eventrix campus hero](frontend/public/images/eventrix-hero.svg)
 
 
 
