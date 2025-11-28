@@ -35,7 +35,7 @@ Eventrix/
 
 ## Getting Started
 ### Prerequisites
-- Node.js 25.1.0 or later
+- Node.js or later
 - npm (ships with Node.js)
 - MongoDB running locally on the default port or accessible connection string
 
