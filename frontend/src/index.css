@@ -1,27 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import './styles/theme.css';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --primary: #0b72c4;
-  --primary-light: #5aa3ff;
-  --primary-dark: #083359;
-  --primary-gradient: linear-gradient(135deg, #0b72c4 0%, #1ea4ff 100%);
-  --secondary: #0f4c81;
-  --secondary-light: #1f6da6;
-  --secondary-dark: #082d49;
-  --accent: #6fcf97;
-  --dark: #0d1b2a;
-  --gray: #52616b;
-  --light-gray: #e6edf5;
-  --white: #ffffff;
-  --success: #34c759;
-  --warning: #ffb020;
-  --error: #e63946;
 }
 
 body {

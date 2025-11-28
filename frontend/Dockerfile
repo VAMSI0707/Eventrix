@@ -1,13 +1,21 @@
 # Multi-stage build for optimized production image
-FROM node:18-alpine AS build
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
 
+# Frontend API endpoints (build-time)
+ARG REACT_APP_AUTH_API_URL=/api/auth
+ARG REACT_APP_EVENT_API_URL=/api/events
+ARG REACT_APP_BOOKING_API_URL=/api/bookings
+ENV REACT_APP_AUTH_API_URL=${REACT_APP_AUTH_API_URL}
+ENV REACT_APP_EVENT_API_URL=${REACT_APP_EVENT_API_URL}
+ENV REACT_APP_BOOKING_API_URL=${REACT_APP_BOOKING_API_URL}
+
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy source code
 COPY . .

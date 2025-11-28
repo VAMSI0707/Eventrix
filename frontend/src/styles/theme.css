@@ -1,28 +1,33 @@
 :root {
-  /* New color scheme */
-  --primary: #8B0000;  /* Dark Red */
-  --primary-light: #DC143C;  /* Crimson */
-  --primary-dark: #640000;
-  --secondary: #4A4A4A;  /* Dark Grey */
-  --secondary-light: #6E6E6E;
-  --secondary-dark: #2C2C2C;
-  
+  /* Blue-forward color scheme */
+  --primary: #0b72c4;
+  --primary-light: #5aa3ff;
+  --primary-dark: #083359;
+  --secondary: #0f4c81;
+  --secondary-light: #1f6da6;
+  --secondary-dark: #082d49;
+  --accent: #4fb3ff;
+  --dark: #0d1b2a;
+  --gray: #52616b;
+  --light-gray: #e6edf5;
+  --white: #ffffff;
+
   /* Gradients */
   --primary-gradient: linear-gradient(135deg, var(--primary), var(--primary-light));
   --secondary-gradient: linear-gradient(135deg, var(--secondary), var(--secondary-light));
-  
+
   /* Text colors */
-  --text-primary: #333333;
-  --text-secondary: #666666;
-  --text-light: #FFFFFF;
-  
+  --text-primary: #0c1c2b;
+  --text-secondary: #304a63;
+  --text-light: #ffffff;
+
   /* Other colors */
-  --background: #F5F5F5;
-  --surface: #FFFFFF;
-  --error: #FF3B30;
-  --success: #34C759;
-  --warning: #FF9500;
-  
+  --background: #f4f8ff;
+  --surface: #ffffff;
+  --error: #e63946;
+  --success: #34c759;
+  --warning: #ffb020;
+
   /* Font family */
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Montserrat', sans-serif;
