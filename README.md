@@ -1,7 +1,7 @@
-# EventSphere
+# Eventrix
 
-EventSphere is a microservice-based event management platform. The repository contains the backend services, a React frontend, and shared application code.
-<img width="2557" height="1266" alt="image" src="https://github.com/user-attachments/assets/2879f378-bc57-4968-a198-7bd4bf08bcbf" />
+Eventrix is a microservice-based event management platform. The repository contains the backend services, a React frontend, and shared application code.
+![Eventrix campus hero](frontend/public/images/eventrix-hero.svg)
 
 
 
@@ -25,7 +25,7 @@ All services communicate over HTTP and store data in MongoDB. Ensure that a Mong
 
 ## Project Structure
 ```
-EventSphere/
+Eventrix/
 ├── frontend/
 ├── services/
 │   ├── auth-service/
@@ -49,6 +49,15 @@ cd ../booking-service; npm install
 cd ../../frontend; npm install
 ```
 
+### Run everything with Docker Compose
+The root `docker-compose.yml` wires MongoDB, the three services, and the frontend. Build and start the full Eventrix stack with a single command:
+
+```bash
+docker compose -f docker-compose.yml up --build
+```
+
+The YAML file waits for MongoDB to become healthy before starting the Node.js services and then serves the production frontend through Nginx on port 3000.
+
 ### Run the Backend Services
 Each backend service exposes an npm script for development mode with automatic reloads. Run each one in a separate terminal window:
 ```bash
@@ -64,7 +73,17 @@ npm start
 ```
 The React development server will proxy API requests to the backend services when they are running on the ports listed above.
 
-## Using EventSphere
+### Single Dockerfile build and run
+To run just the production-ready frontend from its Dockerfile without Compose:
+
+```bash
+docker build -t eventrix-frontend ./frontend
+docker run --rm -p 3000:80 eventrix-frontend
+```
+
+Point the app at your running backend services by adjusting the `REACT_APP_*` URLs in `frontend/.env` if needed.
+
+## Using Eventrix
 
 ### Account types and sign-in flow
 - **Attendee accounts** are created through the public registration form available from the navbar. Newly registered users default to the `user` role and can browse events, reserve seats, and review their bookings.
